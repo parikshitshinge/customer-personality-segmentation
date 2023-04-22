@@ -1,0 +1,23 @@
+[ 2023-04-23 00:57:01,397 ] 25 root - INFO - Entered the data ingestion method
+[ 2023-04-23 00:57:01,427 ] 29 root - INFO - Read the marketing_campaign.csv dataset as dataframe
+[ 2023-04-23 00:57:01,517 ] 37 root - INFO - Ingestion of the data is completed
+[ 2023-04-23 00:57:01,517 ] 137 root - INFO - Obtaining preprocessed data
+[ 2023-04-23 00:57:01,540 ] 32 root - INFO - Read raw data completed
+[ 2023-04-23 00:57:01,540 ] 34 root - INFO - Data transformation started
+[ 2023-04-23 00:57:01,544 ] 37 root - INFO - Dropped 'Z_CostContact' & 'Z_Revenue'
+[ 2023-04-23 00:57:01,566 ] 40 root - INFO - Converted 'Dt_Customer' to date
+[ 2023-04-23 00:57:01,569 ] 44 root - INFO - Imputed 'Income' with median
+[ 2023-04-23 00:57:01,573 ] 48 root - INFO - Cleaned 'Marital_Status'
+[ 2023-04-23 00:57:01,576 ] 51 root - INFO - Cleaned 'Education'
+[ 2023-04-23 00:57:01,696 ] 73 root - INFO - Outliers are removed
+[ 2023-04-23 00:57:01,699 ] 78 root - INFO - Added 'Cust_Age' and 'Cust_Tenure' features
+[ 2023-04-23 00:57:01,701 ] 81 root - INFO - Dropped 'Dt_Customer' & 'Year_Birth'
+[ 2023-04-23 00:57:01,701 ] 83 root - INFO - Preprocessing is completed
+[ 2023-04-23 00:57:01,739 ] 91 root - INFO - Preprocessed data is saved
+[ 2023-04-23 00:57:01,739 ] 141 root - INFO - Obtained processed data
+[ 2023-04-23 00:57:01,739 ] 143 root - INFO - Obtaining vectorizer object
+[ 2023-04-23 00:57:01,739 ] 122 root - INFO - Categorical columns: ['Education', 'Marital_Status']
+[ 2023-04-23 00:57:01,739 ] 123 root - INFO - Numerical columns: ['Income', 'Kidhome', 'Teenhome', 'Recency', 'MntWines', 'MntFruits', 'MntMeatProducts', 'MntFishProducts', 'MntSweetProducts', 'MntGoldProds', 'NumDealsPurchases', 'NumWebPurchases', 'NumCatalogPurchases', 'NumStorePurchases', 'NumWebVisitsMonth', 'AcceptedCmp3', 'AcceptedCmp4', 'AcceptedCmp5', 'AcceptedCmp1', 'AcceptedCmp2', 'Complain', 'Response', 'Cust_Age', 'Cust_Tensure']
+[ 2023-04-23 00:57:01,740 ] 147 root - INFO - Applying vectorizer object on processed data
+[ 2023-04-23 00:57:01,781 ] 155 root - INFO - Vectorization is completed
+[ 2023-04-23 00:57:01,797 ] 162 root - INFO - Saved vectorizer object
